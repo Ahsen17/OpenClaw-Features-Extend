@@ -1,6 +1,71 @@
-# OpenClaw 功能扩展
+<div align="center">
 
-目前支持以下功能扩展：
+# 🦞 OpenClaw Features Extend
 
-- 通过 DashScope 接入 Qwen Realtime ASR 模型，实现语音输入转文本内容
-- 支持调用 Chrome 浏览器自带的 TTS 实现实时语音播报
+### Extend OpenClaw with real-time voice interaction capabilities
+
+<p>
+Voice Input · Speech Recognition · Text-to-Speech
+</p>
+
+<p>
+<a href="./README_CN.md">🇨🇳 中文文档</a>
+</p>
+
+<br/>
+
+[![OpenClaw Extension](https://img.shields.io/badge/OpenClaw-Extension-orange?style=flat-square)](https://github.com/openclaw/openclaw)
+[![Qwen ASR](https://img.shields.io/badge/Qwen-Realtime%20ASR-blue?style=flat-square)](https://dashscope.aliyun.com/)
+[![Chrome TTS](https://img.shields.io/badge/TTS-Chrome%20Native-green?style=flat-square)](https://www.google.com/chrome/)
+
+</div>
+
+
+---
+
+## ✨ Overview
+
+**OpenClaw Features Extend** is an extension project designed to enhance the interaction capabilities of [OpenClaw](https://github.com/openclaw/openclaw).
+
+The project currently focuses on adding **real-time voice interaction**, enabling OpenClaw to support both voice input and voice output.
+
+Current capabilities:
+
+- 🎙️ **Real-time Speech Recognition**
+  - Integrates Alibaba Cloud **DashScope Qwen Realtime ASR**
+  - Converts microphone audio into text in real time
+
+- 🔊 **Real-time Speech Output**
+  - Uses Chrome native **Text-to-Speech (TTS)**
+  - Converts OpenClaw responses into natural voice output
+
+
+The goal:
+
+> Make OpenClaw interaction more natural, moving from text-based communication toward voice-first AI experiences.
+
+
+---
+
+# 🚀 Features
+
+
+## 🎙️ Real-time Speech Recognition
+
+
+Powered by **DashScope Qwen Realtime ASR**, enabling real-time voice input for OpenClaw.
+
+
+```mermaid
+flowchart LR
+
+    A[🎙️ Microphone Input]
+        --> B[🔊 Audio Stream]
+
+    B --> C[☁️ DashScope API]
+
+    C --> D[🤖 Qwen Realtime ASR]
+
+    D --> E[📝 Text Output]
+
+    E --> F[🦞 OpenClaw]
