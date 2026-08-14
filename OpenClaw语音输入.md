@@ -4,7 +4,7 @@
 > - 希望 OpenClaw 能接入 Qwen ASR 模型
 > - 语音输入不直接作为实时输入内容，而是转译成文本内容一次性输入
 
-# OpenClaw WebChat 接入 DashScope Qwen ASR 语音输入操作手册
+# OpenClaw Control UI 接入 DashScope Qwen ASR 语音输入操作手册
 
 > 目标：在 OpenClaw WebChat 中实现“语音输入 → ASR 转文字 → 填入输入框 → 用户手动发送”。  
 > 非目标：不做完整语音对话、不自动发送给 agent、不启用助手语音输出/TTS。
